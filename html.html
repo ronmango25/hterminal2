@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack Terminal Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hack Terminal</h1>
+        <div class="terminal">
+            <h2>Terminal</h2>
+            <div class="code-box" contenteditable="true" spellcheck="false">
+                <!-- User input code will be inserted here -->
+            </div>
+            <button id="inject-btn">Inject Code</button>
+        </div>
+        <div class="website">
+            <h2>Website Code</h2>
+            <textarea id="website-code" placeholder="Enter website code here..."></textarea>
+            <button id="submit-btn">Submit</button>
+        </div>
+        <div id="website-content" class="website-content">
+            <!-- Injected website code will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
